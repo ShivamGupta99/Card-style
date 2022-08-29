@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shoes styling</title>
+</head>
+<body>
+    <div class="container">  
+        <div class="card" >  
+            <div class="imgBx">  
+                <img src="./shoe.webp" alt="shoes" id="bg">
+                <!-- <img src="https://assets.codepen.io/4164355/shoes.png" alt="Shoes" id="bg"> -->
+            </div>  
+         <div class="contentBx">  
+            <h2>Nike Shoes</h2>  
+            <div class="size">  
+            <h3>Size :</h3>  
+            <button onclick='document.getElementById("bg").style.width="170px"'>
+                <span>7</span>
+            </button>
+            <button onclick='document.getElementById("bg").style.width="200px"'>
+                <span>8</span>
+            </button>
+            <button onclick='document.getElementById("bg").style.width="240px"'>
+                <span>9</span>
+            </button>
+            <button onclick='document.getElementById("bg").style.width="270px"'>
+                <span>10</span>
+            </button>         
+          </div>  
+          <div class="color">  
+           <h3>Color :</h3> 
+            <span onclick='document.getElementById("col").style.color="#9bdc28"'></span>
+            <span  onclick='document.getElementById("col").style .color="#03a9f4"'></span>
+             <span onclick='document.getElementById("col").style.color="#e91e63"'></span>          
+          </div>  
+          <a href="#" onclick="show()">Buy Now</a>  
+         </div>  
+        </div>  
+       </div> 
+       <script>
+           function show(){
+               alert("Your order will be placed..Thanks for order shoes");
+           }
+       </script> 
+</body>
+</html>
